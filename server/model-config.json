@@ -16,5 +16,13 @@
   "blog": {
     "dataSource": null,
     "public": true
+  },
+  "Post": {
+    "dataSource": "postgresDs",
+    "public": true
+  },
+  "Category": {
+    "dataSource": "postgresDs",
+    "public": true
   }
 }

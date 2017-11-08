@@ -1,0 +1,50 @@
+{
+  "name": "Post",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "PostId": {
+      "type": "number",
+      "required": true
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Summary": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "string",
+      "required": true
+    },
+    "ImageUrl": {
+      "type": "string"
+    },
+    "Pseudonym": {
+      "type": "string"
+    },
+    "Category": {
+      "type": "number",
+      "required": true
+    },
+    "CreatedDate": {
+      "type": "date"
+    },
+    "CreatedBy": {
+      "type": "number"
+    },
+    "IsActive": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

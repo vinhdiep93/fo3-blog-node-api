@@ -1,46 +1,33 @@
 {
-  "name": "Post",
+  "name": "comment",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
-  "mixins": {
-    "Paginate": {
-      "limit": "10"
-    }
-  },
   "properties": {
-    "PostId": {
+    "postId": {
       "type": "number",
       "required": true
-    },
-    "Title": {
-      "type": "string",
-      "required": true
-    },
-    "Summary": {
-      "type": "string"
     },
     "Content": {
       "type": "string",
       "required": true
     },
-    "ImageUrl": {
-      "type": "string"
-    },
-    "Pseudonym": {
-      "type": "string"
-    },
-    "Category": {
+    "CommentId": {
       "type": "number",
+      "required": true
+    },
+    "User": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "string",
       "required": true
     },
     "CreatedDate": {
       "type": "date"
-    },
-    "CreatedBy": {
-      "type": "number"
     },
     "IsActive": {
       "type": "boolean",
@@ -49,14 +36,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "comments":{
-      "type": "hasMany",
-      "model": "comment",
-      "foreignKey":"postId",
-      "primaryKey": "id"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

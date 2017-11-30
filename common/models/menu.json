@@ -1,0 +1,33 @@
+{
+  "name": "Menu",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Alias": {
+      "type": "string"
+    },
+    "Url": {
+      "type": "string",
+      "required": true
+    },
+    "ParentId": {
+      "type": "number"
+    },
+    "IsActive": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

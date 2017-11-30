@@ -8,9 +8,8 @@
     ],
     "mixins": [
       "loopback/common/mixins",
-      "loopback/server/mixins",
-      "../common/mixins",
-      "./mixins"
+      "../node_modules/loopback-ds-paginate-mixin/lib",
+      "../common/mixins"
     ]
   },
   "blog": {
@@ -22,6 +21,14 @@
     "public": true
   },
   "Category": {
+    "dataSource": "postgresDs",
+    "public": true
+  },
+  "comment": {
+    "dataSource": "postgresDs",
+    "public": true
+  },
+  "Menu": {
     "dataSource": "postgresDs",
     "public": true
   }

@@ -16,7 +16,8 @@
     },
     "CommentId": {
       "type": "number",
-      "required": true
+      "required": false,
+      "default": 0
     },
     "User": {
       "type": "string",

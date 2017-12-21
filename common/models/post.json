@@ -32,7 +32,7 @@
     "Pseudonym": {
       "type": "string"
     },
-    "Category": {
+    "CategoryId": {
       "type": "number",
       "required": true
     },
@@ -55,6 +55,11 @@
       "model": "comment",
       "foreignKey":"postId",
       "primaryKey": "id"
+    }
+    ,"category":{
+      "type":"belongsTo",
+      "model":"Category",
+      "foreignKey": ""
     }
   },
   "acls": [],

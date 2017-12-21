@@ -25,7 +25,14 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "posts":{
+      "type": "hasMany",
+      "model": "Post",
+      "foreignKey":"CategoryId",
+      "primaryKey": "id"
+    }
+  },
   "acls": [],
   "methods": {}
 }
